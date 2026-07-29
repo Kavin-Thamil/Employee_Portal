@@ -40,12 +40,12 @@ Smart Employee Portal is a secure, cloud-hosted web application designed for emp
 
 ### Database
 - Amazon RDS (MySQL)
+- Flask-SQLAlchemy
 
 ---
 
 ## 📐 Cloud Architecture Overview
 
-```
 [ Client / Browser ]
         │
         ▼
@@ -55,7 +55,6 @@ Smart Employee Portal is a secure, cloud-hosted web application designed for emp
         │                                                      ──► [ Amazon CloudWatch / SNS ]
         │
         └──► [ Private Subnet: Amazon RDS MySQL Database ]
-```
 
 ---
 
@@ -70,26 +69,19 @@ Smart Employee Portal is a secure, cloud-hosted web application designed for emp
 ### Installation
 
 1. **Clone the repository:**
-   ```
-   git clone [https://github.com/Kavin-Thamil/Smart-Employee-Portal.git](https://github.com/Kavin-Thamil/Smart-Employee-Portal.git)
+   git clone https://github.com/Kavin-Thamil/Smart-Employee-Portal.git
    cd Smart-Employee-Portal
-   ```
 
 2. **Create and activate a virtual environment:**
-   ```
    python -m venv venv
-   ```
-   - **Windows:** `venv\Scripts\activate`
-   - **macOS / Linux:** `source venv/bin/activate`
+   - **Windows:** venv\Scripts\activate
+   - **macOS / Linux:** source venv/bin/activate
 
 3. **Install dependencies:**
-   ```
    pip install -r requirements.txt
-   ```
 
 4. **Configure environment variables:**
-   Create a `.env` file in the root directory:
-   ```
+   Create a .env file in the root directory:
    SECRET_KEY=your_secret_key
    FLASK_ENV=development
    DB_HOST=127.0.0.1
@@ -98,13 +90,10 @@ Smart Employee Portal is a secure, cloud-hosted web application designed for emp
    DB_NAME=employee_portal_db
    AWS_REGION=ap-south-1
    S3_BUCKET_NAME=your-s3-bucket
-   ```
 
 5. **Run the local development server:**
-   ```
    python app.py
-   ```
-   Open `http://127.0.0.1:5000/` in your browser.
+   Open http://127.0.0.1:5000/ in your browser.
 
 ---
 
@@ -121,6 +110,6 @@ Building and deploying Smart Employee Portal provided practical experience with:
 ## 👤 Author
 
 **Kavin Thamil A**  
-- **LinkedIn:** [linkedin.com/in/kavinthamil](https://linkedin.com/in/kavinthamil)  
-- **GitHub:** [@Kavin-Thamil](https://github.com/Kavin-Thamil)  
+- **LinkedIn:** https://www.linkedin.com/in/kavinthamil  
+- **GitHub:** https://github.com/Kavin-Thamil  
 - **Email:** kavinthamil01@gmail.com
